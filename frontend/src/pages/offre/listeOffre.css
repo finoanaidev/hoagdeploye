@@ -1,0 +1,24 @@
+/* Ajoutez ce style dans votre fichier listeOffre.css */
+
+.boutons-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modifier-btn,
+  .supprimer-btn {
+    background-color: #007bff; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    padding: 0.5rem 1rem; /* Padding autour du texte */
+    cursor: pointer;
+    border-radius: 4px; /* Bordure arrondie */
+    transition: background-color 0.3s ease; /* Animation de transition */
+  }
+  
+  .modifier-btn:hover,
+  .supprimer-btn:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
+  

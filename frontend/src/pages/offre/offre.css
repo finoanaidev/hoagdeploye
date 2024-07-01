@@ -1,0 +1,184 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.offre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.search-container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-container.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; /* This will vertically center the content */
+}
+
+.search-container h1 {
+  color: #5159a7; /* Updated color */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-container p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin: 0 5px;
+}
+
+.search-button {
+  background-color: #007BFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.search-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.result-count {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: rgb(81, 89, 167);
+}
+
+.job-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.job-result {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width for wider results */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center; /* Center-align text */
+}
+
+.job-header {
+  width: 100%;
+  background-color: #5159A7;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.25rem;
+}
+
+.job-body {
+  padding: 20px;
+  color: #333333;
+}
+
+.job-body p {
+  margin: 10px 0;
+}
+
+.job-buttons {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Adjust spacing between buttons */
+  padding: 10px 0;
+  border-top: 1px solid #eaeaea; /* Add a border to separate buttons from content */
+}
+
+.job-buttons .voir-btn,
+.job-buttons .recruter-btn {
+  flex: 0 0 100px; /* Ensure both buttons have the same fixed width */
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center; /* Center-align text inside buttons */
+}
+
+.job-buttons .voir-btn {
+  background-color: #007bff;
+}
+
+.job-buttons .recruter-btn {
+  background-color: #28a745;
+}
+
+.job-buttons .voir-btn:hover,
+.job-buttons .recruter-btn:hover {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .job-result {
+    width: 90%;
+  }
+
+  .job-buttons {
+    justify-content: space-between; /* Ensure both buttons take up equal space */
+  }
+
+  .job-buttons .voir-btn,
+  .job-buttons .recruter-btn {
+    flex: 1; /* Ensure both buttons take up equal space */
+    padding: 10px 20px; /* Ensure padding is consistent */
+  }
+}
+
+@media (max-width: 480px) {
+  .job-header {
+    font-size: 1rem;
+  }
+
+  .job-body p {
+    font-size: 0.875rem;
+  }
+
+  .job-buttons .voir-btn,
+  .job-buttons .recruter-btn {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    flex: 1; /* Ensure both buttons take up equal space */
+  }
+}

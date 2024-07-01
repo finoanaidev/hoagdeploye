@@ -1,0 +1,57 @@
+.detail-container {
+  margin-top: 90px;
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(60, 64, 67, 0.3);
+  background-color: #fff;
+  padding: 24px;
+}
+
+.detail-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.detail-header h2 {
+  font-size: 40px;
+  color: #FAEE46;
+}
+
+.detail-content {
+  text-align: left;
+}
+
+.detail-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: none; /* Supprimer le fond bleu */
+  text-decoration: none; /* Supprimer le soulignement */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ajouter une petite ombre */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.detail-text {
+  margin-bottom: 20px;
+  text-align: left; /* Aligner les détails des compétences à gauche */
+}
+
+.postuler-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.postuler-btn:hover {
+  background-color: #4cae4c;
+}
